@@ -1,0 +1,8 @@
+{
+    "name": "schams-net/aws-sdk-php",
+    "type": "typo3-cms-extension",
+    "description": "Amazon Web Services (AWS) SDK for PHP",
+    "require": {
+      "typo3/cms-core": "^7 || ^8 || ^9"
+    }
+}
