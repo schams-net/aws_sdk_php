@@ -9,10 +9,10 @@ declare(strict_types=1);
  * See https://aws.amazon.com/sdk-for-php/ for details including the license.
  */
 
- use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
-$extensionKey = "aws_sdk_php";
-$autoload = ExtensionManagementUtility::extPath($extensionKey) . 'Resources/Private/Libraries/vendor/autoload.php';
-require_once($autoload);
+if(!class_exists('Aws\AwsClient')) {
+    require_once(ExtensionManagementUtility::extPath("aws_sdk_php") . 'Resources/Private/Libraries/vendor/autoload.php');
+}
