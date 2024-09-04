@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'https://schams.net',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.0.0-12.4.999',
+            'typo3' => '12.0.0-13.4.999',
             'php' => '8.1.0-8.3.999'
         ],
         'conflicts' => [
