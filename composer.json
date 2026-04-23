@@ -1,0 +1,17 @@
+{
+    "name": "schams-net/aws-sdk-php",
+    "type": "typo3-cms-extension",
+    "description": "Amazon Web Services (AWS) SDK for PHP v3",
+    "require": {
+        "typo3/cms-core": "^14"
+    },
+    "conflict": {
+        "aws/aws-sdk-php": "*"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "aws_sdk_php",
+            "version": "0.0.0"
+        }
+    }
+}
